@@ -7,9 +7,9 @@ test.each([
     [3, true],
     [0, false],
     [4, false]
-])("when requesting %d seats returns %p", (requestedSeats, expected) => {
+])("when requesting %d seats returns %p", (noOfSeats, expected) => {
     // Act
-    const result = isValidNoOfSeats(requestedSeats);
+    const result = isValidNoOfSeats(noOfSeats);
     // Assert
     expect(result).toBe(expected);
 });

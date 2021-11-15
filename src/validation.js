@@ -1,3 +1,3 @@
-const isValidNoOfSeats = seatsRequested => seatsRequested > 0 && seatsRequested < 4;
+const isValidNoOfSeats = noOfSeats => noOfSeats > 0 && noOfSeats < 4;
 
 module.exports = isValidNoOfSeats;
