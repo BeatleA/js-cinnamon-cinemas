@@ -33,6 +33,7 @@ describe("allocateSeats", () => {
         [3, "B5, C1, C2"],
         [2, "C3, C4"],
         [1, "C5"],
+        [1, ""]
     ])("number of seats requested %d, allocated %s", (noOfSeats, expected) => {
         // Act
         const result = allocateSeats(seats, noOfSeats);
