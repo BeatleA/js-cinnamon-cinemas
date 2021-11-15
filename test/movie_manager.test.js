@@ -1,8 +1,8 @@
 const allocateSeats = require("../src/movie_manager");
-const initialise = require("../src/movie_theatre");
+const initialiseSeats = require("../src/movie_theatre");
 
 // Arrange
-const seats = initialise();
+const seats = initialiseSeats();
 
 test.each([
     // Arrange
@@ -28,7 +28,7 @@ test.each([
     [1, "A1"],
 ])("returns allocated seats: seats requested %d, allocated %s", (seatsRequested, expected) => {
     // Arrange
-    const seats2 = initialise();
+    const seats2 = initialiseSeats();
     // Act
     const result = allocateSeats(seats2, seatsRequested);
     // Assert
