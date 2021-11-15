@@ -4,7 +4,8 @@ test.each([
     // Arrange
     [1, true],
     [2, true],
-    [3, true]
+    [3, true],
+    [0, false]
 ])("when requesting %d seats returns %p", (requestedSeats, expected) => {
     // Act
     const result = isValidNoOfSeats(requestedSeats);
