@@ -1,0 +1,23 @@
+{
+  "name": "js-cinnamon-cinemas",
+  "version": "1.0.0",
+  "description": "Cinnamon Cinemas Movie Theatre Seating Challenge",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BeatleA/js-cinnamon-cinemas.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BeatleA/js-cinnamon-cinemas/issues"
+  },
+  "homepage": "https://github.com/BeatleA/js-cinnamon-cinemas#readme",
+  "devDependencies": {
+    "jest": "^27.3.1"
+  }
+}
