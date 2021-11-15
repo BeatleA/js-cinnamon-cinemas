@@ -2,6 +2,11 @@ const allocateSeats = require("../src/movie_manager");
 const initialiseSeats = require("../src/movie_theatre");
 
 describe("allocateSeats", () => {
+    test("throws an error if not passed valid arguments", () => {
+        expect(() => {
+            allocateSeats();
+        }).toThrow("seats is required");
+    });
 
     // Arrange
     const seats = initialiseSeats();
