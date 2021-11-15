@@ -4,7 +4,7 @@
   "description": "Cinnamon Cinemas Movie Theatre Seating Challenge",
   "main": "index.js",
   "scripts": {
-    "test": "echo jest"
+    "test": "jest"
   },
   "repository": {
     "type": "git",
