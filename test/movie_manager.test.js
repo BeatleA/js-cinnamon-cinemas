@@ -33,7 +33,7 @@ describe("allocateSeats", () => {
         [3, "B5, C1, C2"],
         [2, "C3, C4"],
         [1, "C5"],
-    ])("returns allocated seats: number of seats requested %d, allocated %s", (noOfSeats, expected) => {
+    ])("number of seats requested %d, allocated %s", (noOfSeats, expected) => {
         // Act
         const result = allocateSeats(seats, noOfSeats);
         // Assert
@@ -45,7 +45,7 @@ describe("allocateSeats", () => {
         [2, "A1, A2"],
         [3, "A1, A2, A3"],
         [1, "A1"],
-    ])("returns allocated seats in empty theatre: number of seats requested %d, allocated %s", (noOfSeats, expected) => {
+    ])("empty theatre, number of seats requested %d, allocated %s", (noOfSeats, expected) => {
         // Arrange
         const seats2 = initialiseSeats();
         // Act
