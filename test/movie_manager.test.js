@@ -54,4 +54,18 @@ describe("allocateSeats", () => {
         // Assert
         expect(result).toBe(expected);
     });
+
+    test.each([
+        // Arrange
+        [3],
+        [2],
+        [1]
+    ])("full theatre, number of seats requested %d, allocated none", noOfSeats => {
+        // Arrange
+        const seats = new Array(15).fill("allocated");
+        // Act
+        const result = allocateSeats(seats, noOfSeats);
+        // Assert
+        expect(result).toBe("");
+    });
 });
