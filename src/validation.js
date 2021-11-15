@@ -1,3 +1,5 @@
 const isValidNoOfSeats = noOfSeats => noOfSeats > 0 && noOfSeats < 4;
 
-module.exports = isValidNoOfSeats;
+const isValidSeats = seats => Array.isArray(seats) && seats.length === 15;
+
+module.exports = { isValidNoOfSeats, isValidSeats };
