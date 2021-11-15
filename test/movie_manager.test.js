@@ -8,7 +8,15 @@ describe("allocateSeats", () => {
         }).toThrow("seats not valid");
 
         expect(() => {
+            allocateSeats([], 3);
+        }).toThrow("seats not valid");
+
+        expect(() => {
             allocateSeats(["A1", "A2", "A3", "A4", "A5", "B1", "B2", "B3", "B4", "B5", "C1", "C2", "C3", "C4", "C5"]);
+        }).toThrow("noOfSeats not valid");
+
+        expect(() => {
+            allocateSeats(["A1", "A2", "A3", "A4", "A5", "B1", "B2", "B3", "B4", "B5", "C1", "C2", "C3", "C4", "C5"], 4);
         }).toThrow("noOfSeats not valid");
     });
 
