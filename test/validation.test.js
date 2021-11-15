@@ -14,6 +14,18 @@ describe("isValidNoOfSeats", () => {
         // Assert
         expect(result).toBe(expected);
     });
+
+    test.each([
+        // Arrange
+        ["3"],
+        [true],
+        [[2]]
+    ])("when number of seats not an Integer returns false", (noOfSeats) => {
+        // Act
+        const result = isValidNoOfSeats(noOfSeats);
+        // Assert
+        expect(result).toBe(false);
+    });
 });
 
 describe("isValidSeats", () => {
