@@ -7,7 +7,7 @@ const allocateSeats = (seats, noOfSeats) => {
     let allocatedSeats = "";
     const firstAvailable = findAvailableSeat(seats);
     if (hasEnoughSeats(firstAvailable, noOfSeats)) {
-        allocatedSeats += seats.splice(firstAvailable, noOfSeats, ...Array(noOfSeats).fill("allocated")).join(", ");
+        allocatedSeats = seats.splice(firstAvailable, noOfSeats, ...Array(noOfSeats).fill("allocated")).join(", ");
     } else {
         console.log("Not enough seats");
     }
